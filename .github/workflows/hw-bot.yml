@@ -1,0 +1,33 @@
+name: hw-intern-bot
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"   # every 5 minutes (GitHub's minimum; may run a few minutes late)
+  workflow_dispatch: {}      # lets you click "Run workflow" manually
+
+permissions:
+  contents: write
+
+concurrency:
+  group: hw-bot
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check lists and ping Discord
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          DISCORD_USER_ID: ${{ secrets.DISCORD_USER_ID }}
+        run: python3 hw_bot.py
+
+      - name: Save memory
+        run: |
+          git config user.name "hw-intern-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add seen.json hardware_internships.md
+          git diff --cached --quiet || { git commit -m "update"; for i in 1 2 3; do git pull --rebase -q && git push && break; sleep 5; done; }
