@@ -1,0 +1,33 @@
+name: hw-daily-pick
+
+on:
+  schedule:
+    - cron: "0 13 * * *"   # 13:00 UTC = 9am New York / 6am Los Angeles. Change to suit you (cron is always UTC).
+  workflow_dispatch: {}      # click "Run workflow" to get a pick right now
+
+permissions:
+  contents: write
+
+concurrency:
+  group: hw-daily
+  cancel-in-progress: false
+
+jobs:
+  pick:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Choose today's single best role and post it
+        env:
+          DISCORD_DAILY_WEBHOOK_URL: ${{ secrets.DISCORD_DAILY_WEBHOOK_URL }}
+          DISCORD_USER_ID: ${{ secrets.DISCORD_USER_ID }}
+        run: python3 hw_bot.py --daily
+
+      - name: Remember what was picked (so it never repeats)
+        run: |
+          git config user.name "hw-intern-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add picks.json
+          git diff --cached --quiet || { git commit -m "daily pick"; for i in 1 2 3; do git pull --rebase -q && git push && break; sleep 5; done; }
