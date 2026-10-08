@@ -38,7 +38,7 @@ HARDWARE_KEYWORDS = [
     "hardware", "robot", "embedded", "firmware", "fpga", "asic", "rtl", "soc ",
     "silicon", "mechatronic", "electrical", "electronics", "electronic", "pcb",
     "analog", "digital design", "verification", "circuit", "controls",
-    "autonomy", "autonomous", "perception", "sensor", "mechanical",
+    "autonomy", "autonomous", "perception", "sensor",
     "manufacturing", "test engineer", "validation", "semiconductor", "vlsi",
     "layout", "power electronics", "rf ", "photonic", "optical", "gpu",
     "physical ai", "systems engineer", "thermal", "packaging", "reliability",
@@ -62,6 +62,7 @@ EXCLUDE = [
     "marketing", "sales", "finance", "accounting", "legal", "hr ", "recruit",
     "civil", "environmental", "chemical", "biolog", "nurse", "clinical",
     "cyber", "devops", "data analyst", "customer success", "supply chain analyst",
+    "mechanical", "mech eng",   # you asked to remove mechanical engineering roles entirely
 ]
 
 # Optional: companies to star and sort first. Empty = no preference.
@@ -93,12 +94,15 @@ PRESTIGE_TIERS = {
 }
 DEFAULT_PRESTIGE = 35
 
+# Which companies count for the #prestige alert channel: 100 = top tier only, 80 = top two tiers.
+PRESTIGE_ALERT_MIN = 100
+
 # Optional personal fit tweaks. Leave empty for no preference.
 BOOST_KEYWORDS = []         # e.g. ["robot", "embedded"]: +10 each if in the title (max +20)
 PREFERRED_LOCATIONS = []    # e.g. ["CA", "Boston", "Seattle", "Remote"]: +8 if in the location
 
 CORE_HW = ["hardware", "asic", "rtl", "fpga", "analog", "digital design", "vlsi", "silicon",
-           "embedded", "firmware", "electrical", "mechanical", "mechatronic", "robot", "pcb",
+           "embedded", "firmware", "electrical", "mechatronic", "robot", "pcb",
            "circuit", "semiconductor", "photonic", "rf ", "power electronics", "controls",
            "avionics", "propulsion", "thermal", "optical", "verification", "soc "]
 ADJ_HW = ["systems engineer", "test engineer", "validation", "manufacturing", "reliability",
@@ -279,13 +283,34 @@ def embed(j):
     return e
 
 
-def notify_discord(new) -> bool:
+def is_pure_hardware(j) -> bool:
+    """Hardware engineering only: a core-hardware word in the title, no PM, and not a software role."""
+    t = " " + j["title"].lower() + " "
+    return (not category(j["title"]).startswith("Product")
+            and any(k in t for k in CORE_HW) and "software" not in t)
+
+
+# Each route = one Discord channel (one webhook secret) + a rule for which new roles go there.
+# A role can match several routes (e.g. a Google hardware role goes to hardware AND prestige).
+ROUTES = {
+    "hardware": dict(env="DISCORD_WEBHOOK_URL", label="hardware engineering",
+                     match=is_pure_hardware, emoji="🔧", noun="hardware engineering"),
+    "pm": dict(env="DISCORD_PM_WEBHOOK_URL", label="product / program management",
+               match=lambda j: category(j["title"]).startswith("Product"), emoji="📋", noun="PM"),
+    "prestige": dict(env="DISCORD_PRESTIGE_WEBHOOK_URL", label="top-tier companies",
+                     match=lambda j: (prestige(j["company"]) >= PRESTIGE_ALERT_MIN
+                                      and (is_pure_hardware(j) or category(j["title"]).startswith("Product"))),
+                     emoji="🏆", noun="top-company"),
+}
+
+
+def notify_discord(new, route) -> bool:
     ordered = sorted(new, key=sort_key)
     batch = ordered[:MAX_PER_RUN]
     user = os.environ.get("DISCORD_USER_ID", "").strip()
     ping = f"<@{user}> " if user else ""
     n = len(new)
-    head = f"{ping}🚨 **{n} new hardware/PM internship{'s' if n != 1 else ''}**"
+    head = f"{ping}{route['emoji']} **{n} new {route['noun']} internship{'s' if n != 1 else ''}**"
     if n > MAX_PER_RUN:
         head += f" (showing {MAX_PER_RUN}; full list is in `hardware_internships.md` in the repo)"
     for idx in range(0, len(batch), 10):
@@ -293,7 +318,7 @@ def notify_discord(new) -> bool:
             "content": head if idx == 0 else "",
             "embeds": [embed(j) for j in batch[idx:idx + 10]],
             "allowed_mentions": {"parse": ["users"]},
-        })
+        }, route["env"])
         if not ok:
             return False
         time.sleep(1)
@@ -376,7 +401,8 @@ def score_job(j):
 def daily_pick(all_jobs):
     picks = json.loads(PICKS_FILE.read_text()) if PICKS_FILE.exists() else []
     done = {p["key"] for p in picks}
-    pool = [(score_job(j), j) for k, j in all_jobs.items() if k not in done]
+    pool = [(score_job(j), j) for k, j in all_jobs.items()
+            if k not in done and (is_pure_hardware(j) or category(j["title"]).startswith("Product"))]
     if not pool:
         print("No unpicked roles available.")
         return 0
@@ -446,24 +472,31 @@ def main():
 
     all_jobs, status = collect()
 
-    seen = json.loads(SEEN_FILE.read_text()) if SEEN_FILE.exists() else {}
-    first_run = not seen
+    raw = json.loads(SEEN_FILE.read_text()) if SEEN_FILE.exists() else {}
+    if raw and not all(isinstance(v, dict) for v in raw.values()):  # old single-list format
+        raw = {r: dict(raw) for r in ROUTES}
+    seen = {r: raw.get(r, {}) for r in ROUTES}
     now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
-    new = [j for k, j in all_jobs.items() if k not in seen]
-    have_webhook = bool(os.environ.get("DISCORD_WEBHOOK_URL", "").strip())
-
-    if first_run:
-        # Silently learn everything that's open right now, so you only get pinged about NEW roles.
-        for j in new:
-            seen[j["key"]] = now
-        if have_webhook and all_jobs:
-            discord_post({"content": f"✅ **hw-intern-bot is live.** Tracking {len(all_jobs)} open "
-                                     f"hardware/PM internships. I'll ping you here when new ones appear."})
-    elif new:
-        delivered = notify_discord(new) if have_webhook else True
-        if delivered:  # if Discord failed, leave them unseen so the next run retries
+    summary = []
+    for r, route in ROUTES.items():
+        matching = [j for j in all_jobs.values() if route["match"](j)]
+        new = [j for j in matching if j["key"] not in seen[r]]
+        have = bool(os.environ.get(route["env"], "").strip())
+        if r not in raw:
+            # First time this channel exists: quietly learn what's open now, then say hello.
             for j in new:
-                seen[j["key"]] = now
+                seen[r][j["key"]] = now
+            if have and matching:
+                discord_post({"content": f"✅ **hw-intern-bot is live in this channel** ({route['label']}). "
+                                         f"Tracking {len(matching)} open roles. I'll ping you here when new ones appear."},
+                             route["env"])
+            summary.append(f"{r}: {len(matching)} open (seeded)" + ("" if have else " [no webhook]"))
+        else:
+            delivered = notify_discord(new, route) if (new and have) else True
+            if delivered:  # if Discord failed, leave them unseen so the next run retries
+                for j in new:
+                    seen[r][j["key"]] = now
+            summary.append(f"{r}: {len(matching)} open, {len(new)} new" + ("" if have else " [no webhook]"))
 
     ordered = sorted(all_jobs.values(), key=sort_key)
     lines = [f"# Hardware & product-management internships ({len(ordered)} open)\n"]
@@ -480,9 +513,7 @@ def main():
     SEEN_FILE.write_text(json.dumps(seen, indent=0, sort_keys=True))
 
     print(" | ".join(status))
-    print(f"{len(ordered)} matches, {len(new)} new" +
-          (" (first run: seeded silently)" if first_run else "") +
-          ("" if have_webhook else " [no DISCORD_WEBHOOK_URL set: not notifying]"))
+    print(f"{len(ordered)} total matches | " + " | ".join(summary))
     return 0
 
 

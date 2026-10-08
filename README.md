@@ -1,9 +1,27 @@
-[README.md](https://github.com/user-attachments/files/33087053/README.md)
 # Hardware + Product Management internship bot (Discord)
 
 Checks three public internship lists (Jobright, Simplify/Pitt CSC, zshah101) every 5 minutes.
 Keeps hardware-engineering and product/program-management roles (skips purely software roles)
 and posts each NEW one to your Discord channel as a clickable card with the apply link.
+
+## Your channels (one Discord channel + one GitHub secret each)
+
+| Channel | GitHub secret | What it gets |
+|---|---|---|
+| #hardware | `DISCORD_WEBHOOK_URL` | NEW hardware engineering roles only (no PM, no software titles, no mechanical) |
+| #pm | `DISCORD_PM_WEBHOOK_URL` | NEW product / program management roles |
+| #prestige | `DISCORD_PRESTIGE_WEBHOOK_URL` | NEW hardware-engineering or PM roles at top-tier companies (NVIDIA, Apple, Google, Tesla, ...) |
+| #pick-of-the-day | `DISCORD_DAILY_WEBHOOK_URL` | One best-fit, most-prestigious role per day |
+
+A role can show up in two channels (e.g. a Google hardware role goes to #hardware and #prestige).
+Channels you haven't set a secret for are simply skipped, so you can add them one at a time.
+**Add all your secrets BEFORE the first run**: the first run quietly memorizes everything currently open
+and posts a "bot is live" hello in each channel. Channels added later get no hello and no backlog, only new roles.
+Optional `DISCORD_USER_ID` makes the bot @ping you.
+
+Mechanical engineering roles are removed completely (the `EXCLUDE` list in `hw_bot.py`).
+Roles like systems/test/manufacturing engineer are still listed in `hardware_internships.md`
+but aren't pinged, since they aren't "purely hardware engineering".
 
 ## Setup (about 5 minutes, no coding)
 
@@ -52,6 +70,8 @@ Top of `hw_bot.py`:
 - `HARDWARE_KEYWORDS` / `PM_KEYWORDS`: words that make a title count
 - `EXCLUDE`: words that drop a role
 - `PM_SKIP_PURE_SOFTWARE`: `True` drops PM roles with "software" in the title
+- `PRESTIGE_ALERT_MIN`: 100 = only top-tier companies in #prestige, 80 = also the next tier (many more roles)
+- `PRESTIGE_TIERS`: which company counts as how prestigious
 - `PRIORITY`: optional companies to sort first
 
 ## Test the webhook from your own computer
