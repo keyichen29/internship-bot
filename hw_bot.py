@@ -65,6 +65,10 @@ EXCLUDE = [
     "mechanical", "mech eng",   # you asked to remove mechanical engineering roles entirely
 ]
 
+# Drop roles that require a PhD / Master's / MBA (flagged by Simplify's 🎓 marker, or stated in the title).
+# "BS/MS" and "Undergraduate" roles are kept, since undergrads can apply to those.
+EXCLUDE_ADVANCED_DEGREE = True
+
 # Optional: companies to star and sort first. Empty = no preference.
 PRIORITY = []
 
@@ -143,6 +147,24 @@ def make_key(company, title, url, location):
     return f"{company.lower()}|{title.lower()}|{location.lower()}"
 
 
+_ADV_RE = re.compile(
+    r"ph\.?\s?d|doctor|postdoc|\bmaster(?:['’]?s)\b|\bmaster of\b|\bmba\b|advanced degree|\bgraduate\b",
+    re.I)
+_MS_RE = re.compile(r"\b(?:MS|M\.S\.?)\b")                          # case-sensitive on purpose
+_UG_RE = re.compile(r"\b(?:BS|B\.S\.?|BA|bachelor'?s?|undergrad\w*)\b", re.I)
+
+
+def requires_advanced_degree(title: str) -> bool:
+    """True if the title says the role needs a PhD / Master's / MBA (BS/MS and undergrad roles pass)."""
+    if re.search(r"ph\.?\s?d|doctor|postdoc|\bmba\b|advanced degree", title, re.I):
+        return True
+    if re.search(r"\bmaster(?:['’]?s)\b|\bmaster of\b", title, re.I) or re.search(r"\bgraduate\b", title, re.I):
+        return not _UG_RE.search(title)
+    if _MS_RE.search(title):
+        return not _UG_RE.search(title)
+    return False
+
+
 def category(title: str) -> str:
     t = " " + title.lower() + " "
     if any(k in t for k in PM_KEYWORDS):
@@ -151,6 +173,8 @@ def category(title: str) -> str:
 
 
 def matches(title: str, force: bool = False) -> bool:
+    if EXCLUDE_ADVANCED_DEGREE and requires_advanced_degree(title):
+        return False
     t = " " + title.lower() + " "
     if any(x in t for x in EXCLUDE):
         return False
@@ -181,6 +205,8 @@ def parse_simplify(text: str):
         for row in re.findall(r"<tr>(.*?)</tr>", sec, re.S):
             cells = re.findall(r"<td[^>]*>(.*?)</td>", row, re.S)
             if len(cells) < 5:
+                continue
+            if EXCLUDE_ADVANCED_DEGREE and "🎓" in row:
                 continue
             company = clean(cells[0])
             if company == "↳":
@@ -213,6 +239,8 @@ def parse_md_tables(text: str, source: str):
                 cells = [c.strip() for c in lines[i].strip().strip("|").split("|")]
                 i += 1
                 if len(cells) != len(header):
+                    continue
+                if EXCLUDE_ADVANCED_DEGREE and "🎓" in " ".join(cells):
                     continue
                 row = dict(zip(header, cells))
                 company = clean(row.get("company", ""))
