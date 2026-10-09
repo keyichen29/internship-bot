@@ -19,6 +19,9 @@ Channels you haven't set a secret for are simply skipped, so you can add them on
 and posts a "bot is live" hello in each channel. Channels added later get no hello and no backlog, only new roles.
 Optional `DISCORD_USER_ID` makes the bot @ping you.
 
+PhD, Master's, and MBA roles are removed too (Simplify's 🎓 "advanced degree required" flag, plus degree words in titles).
+"BS/MS" and "Undergraduate" roles are kept. Turn this off with `EXCLUDE_ADVANCED_DEGREE = False`.
+
 Mechanical engineering roles are removed completely (the `EXCLUDE` list in `hw_bot.py`).
 Roles like systems/test/manufacturing engineer are still listed in `hardware_internships.md`
 but aren't pinged, since they aren't "purely hardware engineering".
