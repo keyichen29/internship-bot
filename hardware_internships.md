@@ -1,11 +1,12 @@
-# Hardware & product-management internships (477 open)
+# Hardware & product-management internships (480 open)
 
-## Hardware & Hardware-adjacent (396)
+## Hardware & Hardware-adjacent (399)
 
 - **ABB**: AI Robotics UI/UX Intern- Fall 2026 · Milpitas, California, USA · Aug 27, 2026 · [Apply](https://abb.wd3.myworkdayjobs.com/external_career_page/job/Milpitas-California-USA/AI-Robotics-UI-UX-Intern--Fall-2026_JR00044847-1) _(zshah)_
 - **ABB**: Physical AI Robotics Simulation Intern- Fall 2026 · Milpitas, California, USA · Aug 27, 2026 · [Apply](https://abb.wd3.myworkdayjobs.com/external_career_page/job/Milpitas-California-USA/Physical-AI-Robotics-Simulation-Intern--Fall-2026_JR00044848-1) _(zshah)_
 - **Accelevation**: Electrical Engineering Intern - Summer 2027 · Miamisburg, OH, United States · Oct 18 · [Apply](https://jobright.ai/jobs/info/6a83c7b91081a745e9711115?utm_campaign=1048&utm_source=git) _(jobright)_
 - **ADT**: Hardware Engineering & Connected Devices Intern · Boca Raton, FL · 2d · [Apply](https://fa-erqb-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/3022475?utm_source=Simplify&ref=Simplify) _(simplify)_
+- **AeroNex Systems**: Test Engineer Intern · Mississippi, United States · Oct 18 · [Apply](https://jobright.ai/jobs/info/6ad59a99ebd52f378af90429?utm_campaign=1048&utm_source=git) _(jobright)_
 - **AeroVironment**: Autonomy & Robotics Engineer Intern · 14 locationsGermantown, MD / Dayton, OH / Pottstown, PA / Albuquerque, NM / Sunrise, FL / Arlington County, Arlington, VA / Melbourne, FL / Petaluma, CA / Minneapolis, MN / Herndon, VA / Huntsville, AL / San Diego, CA / Moorpark, CA / Simi Valley, CA · 11d · [Apply](https://avav.wd1.myworkdayjobs.com/en-US/avav/job/Simi-Valley-CA/Summer-2027-Autonomy---Robotics-Engineering-Intern_8556?utm_source=Simplify&ref=Simplify) _(simplify)_
 - **AeroVironment**: Autonomy & Robotics Engineer Intern · Moorpark, CA · 28d · [Apply](https://avav.wd1.myworkdayjobs.com/en-US/avav/job/Moorpark-CA/Summer-2027-Autonomy---Robotics-Engineering-Intern_8551?utm_source=Simplify&ref=Simplify) _(simplify)_
 - **AeroVironment**: Embedded Software Engineer Intern · Simi Valley, CA · 1mo · [Apply](https://avav.wd1.myworkdayjobs.com/en-US/avav/job/Simi-Valley-CA/Summer-2027-Embedded-Software-Engineering-Intern_8549?utm_source=Simplify&ref=Simplify) _(simplify)_
@@ -56,15 +57,15 @@
 - **Arc**: Electrical Hardware Engineering Intern · Torrance, CA · 16d · [Apply](https://job-boards.greenhouse.io/arcboatcompany/jobs/5442853008?utm_source=Simplify&ref=Simplify) _(simplify)_
 - **Astera Labs**: Firmware Engineer Intern (Leo) · San Jose, CA · Sep 17, 2026 · [Apply](https://job-boards.greenhouse.io/asteraearlycareer2027/jobs/4731584005) _(zshah)_
 - **Astera Labs**: Firmware Engineering Intern (Optical) · San Jose, CA · Sep 28, 2026 · [Apply](https://job-boards.greenhouse.io/asteraearlycareer2027/jobs/4738565005) _(zshah)_
-- **Astranis**: Electrical Engineer Intern · SF · 25d · [Apply](https://job-boards.greenhouse.io/astranis/jobs/4704784006?utm_source=Simplify&ref=Simplify) _(simplify)_
+- **Astranis**: Electrical Engineer Intern · SF · 26d · [Apply](https://job-boards.greenhouse.io/astranis/jobs/4704784006?utm_source=Simplify&ref=Simplify) _(simplify)_
 - **Astranis**: Flight Software Intern - Summer 2027 · SF · 26d · [Apply](https://job-boards.greenhouse.io/astranis/jobs/4704598006?utm_source=Simplify&ref=Simplify) _(simplify)_
 - **Astranis**: FPGA Intern - Summer 2027 · SF · 25d · [Apply](https://job-boards.greenhouse.io/astranis/jobs/4704805006?utm_source=Simplify&ref=Simplify) _(simplify)_
 - **Astranis**: RF Validation Intern - Summer 2027 · SF · 24d · [Apply](https://job-boards.greenhouse.io/astranis/jobs/4716499006?utm_source=Simplify&ref=Simplify) _(simplify)_
 - **Astranis**: Software Defined Radio Hardware Associate Intern · SF · 25d · [Apply](https://job-boards.greenhouse.io/astranis/jobs/4715983006?utm_source=Simplify&ref=Simplify) _(simplify)_
 - **Astranis**: Software Defined Radio Hardware Intern - Summer 2027 · SF · 25d · [Apply](https://job-boards.greenhouse.io/astranis/jobs/4716088006?utm_source=Simplify&ref=Simplify) _(simplify)_
-- **Atoms**: Electrical Engineer Intern · SF · 12d · [Apply](https://job-boards.greenhouse.io/atoms/jobs/8869094002?utm_source=Simplify&ref=Simplify) _(simplify)_
+- **Atoms**: Electrical Engineer Intern · SF · 13d · [Apply](https://job-boards.greenhouse.io/atoms/jobs/8869094002?utm_source=Simplify&ref=Simplify) _(simplify)_
 - **Atoms**: Electrical Engineer Intern · SF · 13d · [Apply](https://job-boards.greenhouse.io/cssmerge/jobs/8869098002?utm_source=Simplify&ref=Simplify) _(simplify)_
-- **AutoZone**: Ecommerce Intern · Memphis, TN · 27d · [Apply](https://egud.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/155427?utm_source=Simplify&ref=Simplify) _(simplify)_
+- **AutoZone**: Ecommerce Intern · Memphis, TN · 28d · [Apply](https://egud.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/155427?utm_source=Simplify&ref=Simplify) _(simplify)_
 - **Avav**: Hypersonic RF Software Engineering Intern · Germantown, MD · Oct 06, 2026 · [Apply](https://avav.wd1.myworkdayjobs.com/avav/job/Germantown-MD/Hypersonic-RF-Software-Engineering-Intern_8993) _(zshah)_
 - **Avav**: Summer 2027 Embedded Software Engineering Intern · Simi Valley, CA · Sep 10, 2026 · [Apply](https://avav.wd1.myworkdayjobs.com/avav/job/Simi-Valley-CA/Summer-2027-Embedded-Software-Engineering-Intern_8549) _(zshah)_
 - **Avis Budget Group**: Product Innovation Intern · Parsippany-Troy Hills, NJ · 6d · [Apply](https://avisbudget.wd1.myworkdayjobs.com/abg_careers/job/379-Interpace-Pkwy-Parsippany-07054/Accelerate---Product-Innovation-Intern---Summer-2027_R0191163?utm_source=Simplify&ref=Simplify) _(simplify)_
@@ -75,10 +76,12 @@
 - **Bedrock Robotics**: Sensor Hardware Test Engineer Intern · SF · 1mo · [Apply](https://jobs.ashbyhq.com/bedrock-robotics/1f413f83-b897-4938-a19e-ab91bd326c51/application?embed=true&utm_source=Simplify&ref=Simplify) _(simplify)_
 - **Bedrock Robotics**: Sensor Systems Engineer Intern · SF · 1mo · [Apply](https://jobs.ashbyhq.com/bedrock-robotics/d7da851b-55c2-45d4-bf8b-aa879282f25c/application?embed=true&utm_source=Simplify&ref=Simplify) _(simplify)_
 - **Belden**: R&D Cable Intern · Carmel, IN · 30d · [Apply](https://careers.belden.com/job/Carmel-R&D-Cable-Internship-IN-46032/1431653800/?ats=successfactors&utm_source=Simplify&ref=Simplify) _(simplify)_
+- **BioSpace**: Internship- Cleaning Validation · Clayton, NC, United States · Oct 18 · [Apply](https://jobright.ai/jobs/info/6ad59f6f83ada13a9da0eaa6?utm_campaign=1048&utm_source=git) _(jobright)_
 - **Blue Origin**: Avionics Software Intern - Undergraduate · 4 locationsSeattle, WA / LA / Longmont, CO / Denver, CO · 1mo · [Apply](https://blueorigin.wd5.myworkdayjobs.com/blueorigin/job/Greater-Seattle-Area/Summer-2027-Avionics-Software-Internship---Undergraduate_R71424?utm_source=Simplify&ref=Simplify) _(simplify)_
 - **Blue Origin**: Software Developer Intern - Avionics Software · 4 locationsWashington / LA / Longmont, CO / Denver, CO · 1mo · [Apply](https://blueorigin.wd5.myworkdayjobs.com/blueorigin/job/Greater-Seattle-Area/Summer-2027-Software-Developer-Internship---Graduate_R71434?utm_source=Simplify&ref=Simplify) _(simplify)_
 - **Blue Origin**: Software Developer Intern - Undergraduate · Seattle, WA / LA / Denver, CO · 1mo · [Apply](https://blueorigin.wd5.myworkdayjobs.com/blueorigin/job/Greater-Seattle-Area/Summer-2027-Software-Developer-Internship---Undergraduate_R71425?utm_source=Simplify&ref=Simplify) _(simplify)_
 - **Blue Robotics**: Electronics Design Co-op · Victoria, BC, Canada · 1mo · [Apply](https://ats.rippling.com/blue-robotics/jobs/25a883e5-3fa4-459e-9762-5f33a3512cd8?utm_source=Simplify&ref=Simplify) _(simplify)_
+- **Blue Ventis**: Data & Control Systems Engineer Intern · Florida, United States · Oct 18 · [Apply](https://jobright.ai/jobs/info/6ad57a7083ada13a9da0e42b?utm_campaign=1048&utm_source=git) _(jobright)_
 - **Booz Allen**: Electronic Warfare FPGA Engineer Intern · Beavercreek, OH · 1mo · [Apply](https://bah.wd1.myworkdayjobs.com/bah_jobs/job/Beavercreek-OH/University---Summer-2027-Electronic-Warfare-FPGA-Engineering-Intern_R0248465-1?utm_source=Simplify&ref=Simplify) _(simplify)_
 - **Booz Allen**: Systems Engineer Intern · San Diego, CA · 1mo · [Apply](https://bah.wd1.myworkdayjobs.com/bah_jobs/job/San-Diego-CA/University---2027-Summer-Games-Systems-Engineer-Intern---San-Diego--CA_R0248365?utm_source=Simplify&ref=Simplify) _(simplify)_
 - **Booz Allen**: Systems Engineer Intern · McLean, VA · 1mo · [Apply](https://bah.wd1.myworkdayjobs.com/bah_jobs/job/McLean-VA/University---2027-Summer-Games-Systems-Engineer-Intern---McLean--VA_R0248361?utm_source=Simplify&ref=Simplify) _(simplify)_
@@ -165,9 +168,7 @@
 - **Honeywell**: Embedded Engineer Intern · United States · 1mo · [Apply](https://ibqbjb.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/Honeywell/job/155561?utm_source=Simplify&ref=Simplify) _(simplify)_
 - **Honeywell**: Embedded Engineer Intern · United States · 1mo · [Apply](https://ibqbjb.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/Honeywell/job/155562?utm_source=Simplify&ref=Simplify) _(simplify)_
 - **Honeywell**: Offering Management Intern · United States · 1mo · [Apply](https://ibqbjb.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/Honeywell/job/155594?utm_source=Simplify&ref=Simplify) _(simplify)_
-- **Horizon Lane**: Vehicle Systems Engineer Intern · Los Angeles, CA, United States · Oct 18 · [Apply](https://jobright.ai/jobs/info/6ad52c7b810010ec72f5fcaf?utm_campaign=1048&utm_source=git) _(jobright)_
 - **HP IQ**: Software Engineer Intern - Connectivity · SF · 1mo · [Apply](https://job-boards.greenhouse.io/hpiq/jobs/6176783004?utm_source=Simplify&ref=Simplify) _(simplify)_
-- **IBM**: Hardware intern 2027: advanced packaging · Yorktown Heights, NY, United States · Oct 18 · [Apply](https://jobright.ai/jobs/info/6ad3ddeeebd52f378af8c72e?utm_campaign=1048&utm_source=git) _(jobright)_
 - **ID.me**: Product Intern · Mountain View, CA · 1mo · [Apply](https://job-boards.greenhouse.io/idmeuniversityrecruiting/jobs/7986695003?utm_source=Simplify&ref=Simplify) _(simplify)_
 - **Immuta**: Platform & Site Reliability Engineering Internship - Summer 2027 · Columbus, OH · Sep 09, 2026 · [Apply](https://jobs.lever.co/immuta/3c4cb235-6138-4a50-add2-666a5216427e) _(zshah)_
 - **Immuta**: Product Engineering Intern · College Park, MD · 1mo · [Apply](https://jobs.lever.co/immuta/bf3c9d23-8da9-4a11-adf6-ecb7bce82ad4/apply?utm_source=Simplify&ref=Simplify) _(simplify)_
@@ -196,13 +197,14 @@
 - **KLA**: Research Scientist Intern - Plasma Light Source Characterization · Ann Arbor, MI · 6d · [Apply](https://kla.wd1.myworkdayjobs.com/Search/job/Ann-Arbor-MI/Research-Scientist-Intern---Coating-Characterization_2642033-2?utm_source=Simplify&ref=Simplify) _(simplify)_
 - **KLA Corporation**: Research Scientist Intern - Plasma Light Source Characterization · Ann Arbor, MI · 6d · [Apply](https://kla.wd1.myworkdayjobs.com/annarbor/job/Ann-Arbor-MI/Research-Scientist-Intern---Coating-Characterization_2642033-1?utm_source=Simplify&ref=Simplify) _(simplify)_
 - **L3Harris Technologies**: Electro-Optical Engineering Co-op · Waterdown, Hamilton, ON, Canada · 1mo · [Apply](https://jobs.l3harris.com/job/Waterdown-Electro-Optical-Engineering-Co-Op-(Waterdown,-CAN)-ON-L9H-0C5/1428468700/?ats=successfactors&utm_source=Simplify&ref=Simplify) _(simplify)_
-- **Legrand**: Electrical Engineer Co-op · Middletown, PA · 12d · [Apply](https://iadugs.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/1345?utm_source=Simplify&ref=Simplify) _(simplify)_
+- **Legrand**: Electrical Engineer Co-op · Middletown, PA · 13d · [Apply](https://iadugs.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/1345?utm_source=Simplify&ref=Simplify) _(simplify)_
 - **Leidos**: Electrical Hardware Design Engineer Intern · Huntsville, AL · 4d · [Apply](https://leidos.wd5.myworkdayjobs.com/External/job/Huntsville-AL/Electrical-Hardware-Design-Engineering-Intern_R-00193394?utm_source=Simplify&ref=Simplify) _(simplify)_
 - **Leonardo**: Test Systems Engineer Intern · Edinburgh, UK · 1d · [Apply](https://leonardocompany.wd3.myworkdayjobs.com/LeonardoCareerSite/job/GB---Edinburgh/Industrial-Placement-Test-Systems-Engineer_R0034207?utm_source=Simplify&ref=Simplify) _(simplify)_
 - **Life Fitness**: Embedded Software Intern · Schaumburg, IL 60173 · Oct 12, 2026 · [Apply](https://lifefitness.wd1.myworkdayjobs.com/searchLFN/job/Schaumburg-IL-60173/Embedded-Software-Intern_JR-025276) _(zshah)_
 - **Lunar Outpost**: Embedded Software Engineer Intern - Summer 2027 · Golden, CO · 1mo · [Apply](https://lunaroutpost.bamboohr.com/careers/392/?utm_source=Simplify&ref=Simplify) _(simplify)_
 - **Lunar Outpost**: Robotics Engineer Intern · Golden, CO · 1mo · [Apply](https://lunaroutpost.bamboohr.com/careers/391/?utm_source=Simplify&ref=Simplify) _(simplify)_
 - **Lunar Outpost**: Test Engineering Intern · Golden, CO · 1mo · [Apply](https://lunaroutpost.bamboohr.com/careers/399/?utm_source=Simplify&ref=Simplify) _(simplify)_
+- **MAHLE**: Electrical Component Intern (May-Dec) · Lockport, New York, United States · Oct 18 · [Apply](https://jobright.ai/jobs/info/6ac676388ff3fb9b3bc8d363?utm_campaign=1048&utm_source=git) _(jobright)_
 - **Marvell**: AMS Validation Intern · Santa Clara, CA · 20d · [Apply](https://marvell.wd1.myworkdayjobs.com/MarvellCareers/job/Santa-Clara-CA/AMS-Validation-Intern_2603863-1?utm_source=Simplify&ref=Simplify) _(simplify)_
 - **Marvell**: AMS Validation Intern · Santa Clara, CA · 20d · [Apply](https://marvell.wd1.myworkdayjobs.com/MarvellCareers2/job/Santa-Clara-CA/AMS-Validation-Intern_2603863?utm_source=Simplify&ref=Simplify) _(simplify)_
 - **Marvell**: Analog and Mixed Signal Layout Engineer Intern Co-op · Toronto, ON, Canada · 25d · [Apply](https://marvell.wd1.myworkdayjobs.com/MarvellCareers/job/Toronto-Canada/AMS-Layout-Engineer-Intern---BS---2027-Co-Op_2604790?utm_source=Simplify&ref=Simplify) _(simplify)_
@@ -301,7 +303,6 @@
 - **Revel**: Embedded Software Engineer Intern · SF / LA · 1mo · [Apply](https://jobs.ashbyhq.com/revel/f8eec1fd-da28-47ce-bca4-2fbe9c48a889/application?embed=true&utm_source=Simplify&ref=Simplify) _(simplify)_
 - **RF-SMART**: Product Strategy Intern · Jacksonville, FL · 1mo · [Apply](https://job-boards.greenhouse.io/rfsmart/jobs/5409030008?utm_source=Simplify&ref=Simplify) _(simplify)_
 - **Rivian**: Engineering Intern/Co-op - Test and Validation - Charging Products · Torrance, CA · 1mo · [Apply](https://careers.rivian.com/jobs/33725?icims=1&utm_source=Simplify&ref=Simplify) _(simplify)_
-- **Robynex Automation**: Manufacturing Engineering Intern · Colorado, United States · Oct 18 · [Apply](https://jobright.ai/jobs/info/6ad4ee61c4290cef1413228b?utm_campaign=1048&utm_source=git) _(jobright)_
 - **Rocket Lab USA**: Electrical Engineering Intern · Long Beach, CA · 1mo · [Apply](https://job-boards.greenhouse.io/rocketlab/jobs/7990683003?utm_source=Simplify&ref=Simplify) _(simplify)_
 - **Rocket Lab USA**: Flight Software Intern · Littleton, CO · 1mo · [Apply](https://job-boards.greenhouse.io/rocketlab/jobs/7989724003?utm_source=Simplify&ref=Simplify) _(simplify)_
 - **Rocket Lab USA**: Flight Software Intern · Littleton, CO · 1mo · [Apply](https://job-boards.greenhouse.io/rocketlab/jobs/7989722003?utm_source=Simplify&ref=Simplify) _(simplify)_
@@ -361,6 +362,7 @@
 - **SRC, Inc**: Engineering Intern · Syracuse, NY · 1mo · [Apply](https://jobs.jobvite.com/src-inc/job/on4GAfwr?nl=1&nl=1&fr=false&utm_source=Simplify&ref=Simplify) _(simplify)_
 - **SRC, Inc**: Engineering Technician Intern · Syracuse, NY · 1mo · [Apply](https://jobs.jobvite.com/src-inc/job/ow4GAfwA?nl=1&nl=1&fr=false&utm_source=Simplify&ref=Simplify) _(simplify)_
 - **Stanley Black & Decker**: Embedded Software Engineering Intern · Towson, MD · 1mo · [Apply](https://sbdinc.wd1.myworkdayjobs.com/en-US/Stanley_Black_Decker_Career_Site/job/Towson-MD-United-States/Embedded-Engineering-Summer-Intern-2027_REQ-1000052019?utm_source=Simplify&ref=Simplify) _(simplify)_
+- **Stanley Consultants**: Student Intern 2027 - Electrical · Muscatine, IA, United States · Oct 18 · [Apply](https://jobright.ai/jobs/info/6aa5d2ea930bff471a29fe32?utm_campaign=1048&utm_source=git) _(jobright)_
 - **Stryten**: System Engineer Intern · Alpharetta, GA · 1mo · [Apply](https://jobs.stryten.com/jobs/5799?icims=1&utm_source=Simplify&ref=Simplify) _(simplify)_
 - **Susquehanna International Group**: Trading Systems Engineer Intern · London, UK · 1mo · [Apply](https://careers-sig.icims.com/jobs/11334/job?mobile=true&needsRedirect=false&utm_source=Simplify&ref=Simplify) _(simplify)_
 - **Teledyne**: Systems Engineering Intern - Summer 2027 · Huntsville, AL · 1mo · [Apply](https://flir.wd1.myworkdayjobs.com/flircareers/job/US---Huntsville-AL/EADSIM-MBSE-Intern--Summer-2027-_REQ36670-1?utm_source=Simplify&ref=Simplify) _(simplify)_
@@ -382,6 +384,7 @@
 - **Valeo**: Systems Engineering Co-Op (Software) · Troy, MI · Sep 16, 2026 · [Apply](https://valeo.wd3.myworkdayjobs.com/valeo_jobs/job/Troy-MI/Systems-Engineering-Co-Op--Software-_REQ2026071241) _(zshah)_
 - **Varda Space**: Avionics Engineering Intern · El Segundo, CA · 17d · [Apply](https://job-boards.greenhouse.io/vardaspace/jobs/8010158003?utm_source=Simplify&ref=Simplify) _(simplify)_
 - **Varda Space**: Flight Software Intern · El Segundo, CA · 17d · [Apply](https://job-boards.greenhouse.io/vardaspace/jobs/8010159003?utm_source=Simplify&ref=Simplify) _(simplify)_
+- **Varda Space Industries**: Site Reliability Internship - Spring 2027 · El Segundo, CA, United States · Oct 18 · [Apply](https://jobright.ai/jobs/info/6a760ceda26ccc369f8336e0?utm_campaign=1048&utm_source=git) _(jobright)_
 - **Verkada**: Embedded Software Engineer Intern · San Mateo, CA · 1mo · [Apply](https://job-boards.greenhouse.io/verkada/jobs/5211595007?utm_source=Simplify&ref=Simplify) _(simplify)_
 - **Vermeer**: Embedded Software Engineer Intern · Pella, IA · 1mo · [Apply](https://vermeer.wd5.myworkdayjobs.com/externalcareersite/job/Pella-Iowa-USA---Corporate-Office/Embedded-Software-Engineer-Internship-Summer-2027_REQ-22165?utm_source=Simplify&ref=Simplify) _(simplify)_
 - **Vertiv**: Design Engineering Intern · Delaware, OH / Fort Lauderdale, FL · 16d · [Apply](https://egup.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/job/20279257?utm_source=Simplify&ref=Simplify) _(simplify)_
@@ -390,7 +393,7 @@
 - **Vertiv**: Power Management Intern - Summer 2027 · Delaware, OH · 1mo · [Apply](https://egup.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/job/20279233?utm_source=Simplify&ref=Simplify) _(simplify)_
 - **Vertiv**: UI/UX Design Intern · Delaware, OH / Fort Lauderdale, FL / Huntsville, AL · 5d · [Apply](https://egup.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/job/20281371?utm_source=Simplify&ref=Simplify) _(simplify)_
 - **Watts Water**: Product Specialist Intern · Fort Worth, TX · 1mo · [Apply](https://wattswater.wd5.myworkdayjobs.com/Intern-External/job/Fort-Worth-TX/Product-Specialist-Intern-2027_10017586?utm_source=Simplify&ref=Simplify) _(simplify)_
-- **Waymo**: Embedded Intern - Software Engineer · Mountain View, CA · 26d · [Apply](https://careers.withwaymo.com/jobs?gh_jid=8221198&utm_source=Simplify&ref=Simplify) _(simplify)_
+- **Waymo**: Embedded Intern - Software Engineer · Mountain View, CA · 27d · [Apply](https://careers.withwaymo.com/jobs?gh_jid=8221198&utm_source=Simplify&ref=Simplify) _(simplify)_
 - **Western Digital**: Channel Integration Engineer Co-op · Rochester, MN · 1mo · [Apply](https://jobs.smartrecruiters.com/WesternDigital/744000149106240?utm_source=Simplify&ref=Simplify) _(simplify)_
 - **Western Digital**: Read/Write Channel Integration Engineer Co-op - Channel Integration · Rochester, MN · 1mo · [Apply](https://jobs.smartrecruiters.com/WesternDigital/744000149105974?utm_source=Simplify&ref=Simplify) _(simplify)_
 - **WSFS Bank**: Product Intern · Wilmington, DE · 11d · [Apply](https://wsfsbank.wd1.myworkdayjobs.com/wsfscareers/job/Wilmington-DE/XMLNAME-2027-Summer-Internship---Product_R-104113-2?utm_source=Simplify&ref=Simplify) _(simplify)_
@@ -450,7 +453,7 @@
 - **ITT**: Product Management Co-op - Spring/Summer 2027 · Seneca Falls, NY · 1mo · [Apply](https://careersenus-itt-inc.icims.com/jobs/17451/job?mobile=true&needsRedirect=false&utm_source=Simplify&ref=Simplify) _(simplify)_
 - **Johns Manville**: Product Management Intern · Denver, CO · 1mo · [Apply](https://jm.wd103.myworkdayjobs.com/External/job/Denver-CO-WHQ/Product-Management-Intern--Summer-2027_R26_1432?utm_source=Simplify&ref=Simplify) _(simplify)_
 - **Manulife Financial**: Product Management & Risk Technology Intern · Toronto, ON, Canada · 11d · [Apply](https://manulife.wd3.myworkdayjobs.com/en-US/MFCJH_Jobs/job/Toronto-Ontario/Summer-Intern-2027---Product-Management---Risk-Technology_JR26080875?utm_source=Simplify&ref=Simplify) _(simplify)_
-- **Mohawk**: Product Management Intern · Calhoun, GA · 13d · [Apply](https://careers.mohawkind.com/mohawk/job/Calhoun-Product-Management-Intern-Summer-2027-Geor-30701/1436568500/?ats=successfactors&utm_source=Simplify&ref=Simplify) _(simplify)_
+- **Mohawk**: Product Management Intern · Calhoun, GA · 14d · [Apply](https://careers.mohawkind.com/mohawk/job/Calhoun-Product-Management-Intern-Summer-2027-Geor-30701/1436568500/?ats=successfactors&utm_source=Simplify&ref=Simplify) _(simplify)_
 - **MSA Safety**: Software Engineer Intern - Product Development - Summer 2027 · Cranberry Township, PA · 1mo · [Apply](https://careers.msasafety.com/jobs/9993?icims=1&utm_source=Simplify&ref=Simplify) _(simplify)_
 - **Navy Federal**: Summer Associate Internship - Technical Product Analyst · Vienna, VA · 1mo · [Apply](https://fa-etbx-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/nfcu/job/32305?utm_source=Simplify&ref=Simplify) _(simplify)_
 - **NJM Insurance Group**: Insurance Product Management Analyst Intern 3 · Trenton, NJ · 1mo · [Apply](https://njm.wd1.myworkdayjobs.com/njm/job/NJM---Trenton/Insurance-Product-Management-Analyst-Intern-3_R2008190?utm_source=Simplify&ref=Simplify) _(simplify)_
